@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Celebrations Color Palette - Warm Luxury Editorial */
+  --deep-mahogany: #2C1A0E;
+  --rich-chestnut: #7B3F00;
+  --celebration-gold: #C8860A;
+  --soft-gold: #E8C87A;
+  --ivory-cream: #F7F0E6;
+  --near-black: #1A1A1A;
+
+  /* Semantic Design Tokens */
+  --background: #F7F0E6;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #C8860A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #2C1A0E;
+  --secondary-foreground: #F7F0E6;
+  --muted: #F7F0E6;
+  --muted-foreground: #7B3F00;
+  --accent: #E8C87A;
+  --accent-foreground: #2C1A0E;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8C87A;
+  --input: #E8C87A;
+  --ring: #C8860A;
+
+  /* Spacing Tokens */
+  --radius: 0.75rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --section-py: 80px;
+  --section-py-mob: 48px;
+  --container-max: 1200px;
+}
+
+@theme inline {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom Celebrations Colors */
+  --color-mahogany: var(--deep-mahogany);
+  --color-chestnut: var(--rich-chestnut);
+  --color-gold: var(--celebration-gold);
+  --color-soft-gold: var(--soft-gold);
+  --color-ivory: var(--ivory-cream);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* WhatsApp FAB Pulse Animation */
+@keyframes whatsapp-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.whatsapp-pulse {
+  animation: whatsapp-ping 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Ken Burns Effect for Hero */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ken-burns {
+  animation: ken-burns 8s ease-out infinite alternate;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-pulse,
+  .ken-burns {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
