@@ -49,7 +49,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
               <Image
-                src="/images/hero-store.jpg"
+                src="/images/hero-boutique.jpg"
                 alt="Celebrations store interior"
                 fill
                 className="object-cover"

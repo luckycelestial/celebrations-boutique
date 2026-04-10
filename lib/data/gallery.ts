@@ -72,7 +72,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: '10',
-    src: '/images/hero-store.jpg',
+    src: '/images/hero-boutique.jpg',
     alt: 'Celebrations store interior',
     category: 'store',
     aspectRatio: 'landscape',

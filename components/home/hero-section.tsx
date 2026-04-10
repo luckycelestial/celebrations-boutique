@@ -12,7 +12,7 @@ export function HeroSection() {
       {/* Background Image with Ken Burns Effect */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-store.jpg"
+          src="/images/hero-boutique.jpg"
           alt="Celebrations store interior"
           fill
           className="ken-burns object-cover"
