@@ -89,7 +89,7 @@ export function ContactOptions() {
           {/* Map */}
           <div className="relative aspect-video overflow-hidden rounded-lg lg:aspect-auto lg:h-full lg:min-h-[300px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.285431927!2d76.9557!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sGandhipuram%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?&q=119/126,%20Cross%20Cut%20Rd,%20Ram%20Nagar,%20Gandhipuram,%20Coimbatore,%20Tamil%20Nadu%20-%20641009&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
