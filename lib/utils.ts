@@ -49,5 +49,5 @@ export const STORE_INFO = {
   rating: 4.6,
   reviewCount: 1345,
   mapsLink: 'https://maps.google.com/?q=Celebrations,+Cross+Cut+Rd,+Gandhipuram,+Coimbatore',
-  mapsEmbed: 'https://maps.google.com/maps?&q=119/126,%20Cross%20Cut%20Rd,%20Ram%20Nagar,%20Gandhipuram,%20Coimbatore,%20Tamil%20Nadu%20-%20641009&t=&z=15&ie=UTF8&iwloc=&output=embed',
+  mapsEmbed: 'https://maps.google.com/maps?q=Celebrations,+119/126,+Cross+Cut+Rd,+Ram+Nagar,+Gandhipuram,+Coimbatore,+Tamil+Nadu+641009,+India&t=&z=15&ie=UTF8&iwloc=&output=embed',
 }

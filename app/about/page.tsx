@@ -131,7 +131,7 @@ export default function AboutPage() {
             {/* Map */}
             <div className="relative aspect-video overflow-hidden rounded-xl lg:aspect-square">
               <iframe
-                src="https://maps.google.com/maps?&q=119/126,%20Cross%20Cut%20Rd,%20Ram%20Nagar,%20Gandhipuram,%20Coimbatore,%20Tamil%20Nadu%20-%20641009&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Celebrations,+119/126,+Cross+Cut+Rd,+Ram+Nagar,+Gandhipuram,+Coimbatore,+Tamil+Nadu+641009,+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
