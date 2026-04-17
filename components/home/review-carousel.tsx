@@ -86,18 +86,18 @@ export function ReviewCarousel() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="flex-shrink-0 w-[320px] snap-start"
+              className="flex-shrink-0 w-[240px] md:w-[320px] snap-start"
             >
-              <div className="flex h-full flex-col rounded-xl border border-[var(--soft-gold)]/30 bg-[var(--ivory-cream)] p-6">
+              <div className="flex h-full flex-col rounded-xl border border-[var(--soft-gold)]/30 bg-[var(--ivory-cream)] p-4 md:p-6">
                 {/* Quote Icon */}
-                <Quote className="h-8 w-8 text-[var(--celebration-gold)]/30" />
+                <Quote className="h-6 w-6 md:h-8 md:w-8 text-[var(--celebration-gold)]/30" />
                 
                 {/* Rating */}
-                <div className="mt-4 flex items-center gap-1">
+                <div className="mt-3 md:mt-4 flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className={`h-4 w-4 ${
+                      className={`h-3 w-3 md:h-4 md:w-4 ${
                         i < review.rating
                           ? 'fill-[var(--celebration-gold)] text-[var(--celebration-gold)]'
                           : 'text-[var(--soft-gold)]'
@@ -107,20 +107,20 @@ export function ReviewCarousel() {
                 </div>
 
                 {/* Review Text */}
-                <p className="mt-4 flex-1 text-[var(--near-black)] leading-relaxed">
+                <p className="mt-3 md:mt-4 flex-1 text-sm md:text-base text-[var(--near-black)] leading-relaxed">
                   &ldquo;{review.text}&rdquo;
                 </p>
 
                 {/* Author */}
-                <div className="mt-6 flex items-center gap-3 border-t border-[var(--soft-gold)]/30 pt-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--celebration-gold)]/10 text-[var(--celebration-gold)]">
+                <div className="mt-4 md:mt-6 flex items-center gap-3 border-t border-[var(--soft-gold)]/30 pt-4">
+                  <div className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full bg-[var(--celebration-gold)]/10 text-[var(--celebration-gold)] text-sm md:text-base">
                     {review.author.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-medium text-[var(--deep-mahogany)]">
+                    <p className="font-medium text-sm md:text-base text-[var(--deep-mahogany)] truncate max-w-[140px] md:max-w-none">
                       {review.author}
                     </p>
-                    <p className="text-sm text-[var(--rich-chestnut)]">
+                    <p className="text-xs md:text-sm text-[var(--rich-chestnut)]">
                       {review.date}
                     </p>
                   </div>

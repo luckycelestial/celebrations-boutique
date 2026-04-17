@@ -58,7 +58,7 @@ export function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-[var(--ivory-cream)]/95 backdrop-blur-md shadow-sm'
+          ? 'bg-background/95 backdrop-blur-md shadow-sm'
           : 'bg-transparent'
       )}
     >
@@ -185,7 +185,7 @@ export function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-[var(--ivory-cream)] shadow-xl lg:hidden"
+            className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-background shadow-xl lg:hidden"
           >
             <div className="flex h-full flex-col px-6 py-6">
               <div className="flex items-center justify-between">
